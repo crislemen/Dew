@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica9</title>
+</head>
+<body>
+    <script>
+            var mes = prompt("Introduzca un mes");
+        if (mes>0 && mes <= 12) {
+        var anio = prompt("Introduzca un año");
+            if (anio > 0) {
+            alert("Mes anterior" + (parseInt(mes) - 1) + "/" + anio +"Mes posterior" + (parseInt(mes) + 1) + "/" + anio);
+
+            }else{
+                alert("Debes poner el año en formato numérico y no puede ser un año negativo")
+            }
+        }else{
+            alert("Debes poner el mes en formato numérico, si lo has puesto en formato numérico y te ha salido" + 
+           " "+ "esta ventana es porque el mes indicado no existe")
+        };
+    </script>
+</body>
+</html>
