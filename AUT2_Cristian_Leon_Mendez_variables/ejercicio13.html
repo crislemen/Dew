@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica13</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Escribe un numero");
+        var numero2 = prompt("Escribe otro numero");
+        var numero3 = prompt("Escribe un ultimo numero");
+
+        if (parseInt(numero1) + parseInt(numero2)  == parseInt(numero3) && parseInt(numero1) < parseInt(numero2)) {
+            alert("La suma de los 2 primeros numeros da como resultado el tercero y se ha añadido de forma creciente")
+        } else if (parseInt(numero1) + parseInt(numero2)  == parseInt(numero3) && parseInt(numero1) > parseInt(numero2)){
+            alert("La suma de los 2 primeros numeros da como resultado el tercero y se han añadido de forma decreciente");
+            
+        }else{
+        alert("La suma de los 2 primeros numeros no es el tercero");
+        }
+    </script>
+</body>
+</html>

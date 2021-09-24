@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Introduzca la primera variable");
+        var b = prompt("Introduzca la segunda variable");
+        var c = prompt("Introduzca la tercera variable");
+        
+            if (parseInt(a)<0 || parseInt(b)<0 || parseInt(c)<0) {
+                alert("Al menos una de las tres variables es negativa");
+            } else if(a == 0 && b == 0 && c == 0){
+                alert("Las tres variables son igual a 0")
+            } else if(parseInt(a) + parseInt(b) + parseInt(c) > 10 && a!= b,c){
+                alert("La suma de las variables es mayor que 10 y las variables son diferentes")
+            }else{
+                alert("Todo está correcto");
+            }
+    </script>
+</body>
+</html>
