@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor = prompt("Escribe una nota");
+        var nota = Number(valor);
+        if (nota>=0 && nota <=10) {
+            switch (nota) {
+            case 0:              
+            case 1:             
+            case 2:               
+            case 3:
+            case 4:
+                alert("Suspenso");
+                break;
+            case 5:
+            case 6:
+                alert("Aprobado");
+                break;
+            case 7:
+            case 8:
+                alert("Notable");
+                break;
+            case 9:
+            case 10:
+                alert("Sobresaliente");
+                break;
+            default:
+                break;
+        } 
+        }else{
+            alert("Debes indicar un número del 0 al 10")
+        }
+        
+    </script>
+</body>
+</html>
