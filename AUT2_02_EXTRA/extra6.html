@@ -8,7 +8,21 @@
 </head>
 <body>
     <script>
-        
+        var h = prompt("Escibe las horas");
+        var m = prompt("Escribe los minutos");
+        var s = prompt("Escribe los segundos")
+        if (h <=24 && m <=60 && s<=60) {
+            function hdec2hms(h,m,s) {
+             var segundos = parseInt(s) /3600;
+             var minutos = parseInt(m) / 60;
+             var resultado = parseInt(h) + segundos +minutos;  
+             return "La hora convertida en hora decimal es : "+resultado
+            }
+            alert(hdec2hms(h,m,s))
+        }else{
+            alert("debes poner una hora correcta")
+        }
+
     </script>
 </body>
 </html>
