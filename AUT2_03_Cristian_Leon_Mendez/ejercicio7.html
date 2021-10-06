@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra a buscar</title>
+</head>
+<body>
+    <script>
+        var cadena = "arriba abajo arriba arriba abajo ";
+        console.log(cadena);
+        var arriba = "arriba";    
+        var encontrado = cadena.indexOf(arriba);
+        if (encontrado !== -1) {
+                console.log("Se ha encontrado arriba en el texto")
+            };
+            cadena = cadena.replace(/arriba/gi,"abajo");
+            console.log(cadena);
+
+    </script>
+</body>
+</html>

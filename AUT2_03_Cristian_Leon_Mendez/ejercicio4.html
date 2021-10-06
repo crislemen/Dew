@@ -17,6 +17,28 @@
             
         }
         console.log(array);
+
+        let array2 = array.slice();
+        console.log(array2);
+        
+
+
+        array.forEach(function(numero) {
+            if (numero<=5) {
+                array2.shift();
+            }
+            if(numero >5 && numero<=0){
+                array2.pop();
+            }
+            if(numero>0 && numero<=10){
+                array2.unshift(numero)
+            }
+            if(numero>10 && numero<=20){
+                array2.push(numero)
+            }
+            
+        });
+        console.log(array2)
     </script>
 </body>
 </html>
