@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array aleatorio</title>
+</head>
+<body>
+    <script>
+        var elementos = parseInt(prompt("¿Cuantos elementos habran en el array?"));
+        var min = prompt("¿Cual será el numero minimo?");
+        var max = prompt("¿Cual será el numero maximo del array?");
+        function numeroAleatorio(min,max) {
+            return Math.floor(Math.random()*(max-min + 1)) + min;
+        }
+        let array = [];
+        for (let i = 0; i < elementos; i++) {
+            array.push(numeroAleatorio(0,5));
+            
+        }
+        console.log(array);
+    </script>
+</body>
+</html>

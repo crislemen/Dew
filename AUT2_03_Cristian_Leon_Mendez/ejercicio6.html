@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElementoRepetidoArray</title>
+</head>
+<body>
+    <script>
+        function numeroAleatorio(min,max) {
+            return Math.floor(Math.random()*(max-min + 1)) + min;
+        }
+        let array = [];
+        for (let i = 0; i < 50; i++) {
+                array.push(numeroAleatorio(10,20));
+                
+        }
+        console.log(array);
+        let duplicados = [];
+        const arrayOrdenado = [...array].sort();
+        for (let i = 0; i < arrayOrdenado.length; i++) {
+            if (arrayOrdenado[i + 1] === arrayOrdenado[i]) {
+                duplicados.push(arrayOrdenado[i]);
+            }
+            if (arrayOrdenado[i]!=arrayOrdenado[i - 1]) {
+                console.log("El numero "+arrayOrdenado[i]+"Ha aparecido por primera vez en la posicion" + array.indexOf(i));
+            };
+            
+            
+        }
+        console.log(duplicados);
+    </script>
+</body>
+</html>

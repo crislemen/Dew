@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indiceArray</title>
+</head>
+<body>
+    <script>
+            function numeroAleatorio(min,max) {
+            return Math.floor(Math.random()*(max-min + 1)) + min;
+        }
+        let array = [];
+        for (let i = 0; i < 20; i++) {
+            array.push(numeroAleatorio(-100,100));
+            
+        }
+        console.log(array);
+        var maximo = array.reduce(function(a,b) {
+            return Math.max(a,b);
+        },0);
+        console.log("Valor maximo del array: "+maximo);
+        var minimo = array.reduce(function(a,b) {
+            return Math.min(a,b);
+        },0);
+        console.log("Valor minimo del array: " + minimo);
+    </script>
+</body>
+</html>
