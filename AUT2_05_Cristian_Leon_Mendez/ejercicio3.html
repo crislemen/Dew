@@ -3,10 +3,11 @@
 
 <title>Ejercicio 3 - DOM</title>
 <script type="text/javascript">
-function anade() {
-
-}
-</script>
+    function anade() {
+    contenido = document.createTextNode("texto añadido ");
+    document.getElementById("lista").appendChild(contenido);
+    }
+    </script>
 <body>
 <ul id="lista">
 <li>Lorem ipsum dolor sit amet</li>
