@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromiumvsMozilla</title>
+    <script>
+        var  sUsrAg = navigator.userAgent;
+
+    if(sUsrAg.indexOf("Chrome") > -1) {
+        document.write('<link rel="stylesheet" href="stylechrome.css">');
+    } if (sUsrAg.indexOf("Firefox") > -1) {
+        document.write('<link rel="stylesheet" href="stylefirefox.css">');
+    }
+    </script>
+</head>
+<body>
+<div id="pantalla">
+    <h1>Pantalla</h1>
+    <script>
+        var sBrowser, sUsrAg = navigator.userAgent;
+         document.write('<p>Alto disponible  '+screen.availHeight+'</p>');
+         document.write('<p>Ancho disponible '+screen.width+'</p>')
+         document.write('<p>Alto total '+screen.height+'</p>')
+         document.write('<p>Proundidad de color '+screen.colorDepth+'</p>')
+         document.write('<p>Resolucion(bits por pixel) '+screen.pixelDepth+'</p>')
+        </script>
+</div>
+<div id="Ventana">
+    <h1>Ventana</h1>
+    <script>
+        var sBrowser, sUsrAg = navigator.userAgent;
+         document.write('<p>Alto exterior  '+window.outerHeight+'</p>');
+         document.write('<p>Ancho exterior '+window.outerWidth+'</p>')
+         document.write('<p>Coordenada X respecto a la pantalla '+window.screenX+'</p>')
+         document.write('<p>Coordenada Y respecto a la pantalla '+window.screenY+'</p>')
+         document.write('<p>Ha visitado '+window.history+'</p>')
+        </script>
+</div>
+<div id="Despedida">
+    <h1>Despedida</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio sint, animi ab facere explicabo voluptas dicta architecto, neque numquam ipsum sed, nesciunt velit minima dignissimos impedit ea mollitia quasi!</p>
+</div>
+
+</body>
+</html>

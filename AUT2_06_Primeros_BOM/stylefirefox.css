@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#pantalla{
+    background: linear-gradient(#FF1902,#FEFC04);
+    border-radius: 10px;
+    width: 40%;
+}
+#Ventana{   
+    background: linear-gradient(#AED502,#038100);
+    border-radius: 10px;
+    width: 40%;
+}
+#Despedida{
+    background: radial-gradient(#F5242D,#1102F1);
+    color: white;
+    border-radius: 10px;
+}
