@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio1</title>
     <style>
-        div{
+        div {
             text-align: center;
+            background: linear-gradient(blue, aliceblue);
+            padding: 75px;
+            color: white;
+            width: 500px;
+            margin: auto;
         }
     </style>
     <script>
-       var ventana;
+        var ventana;
 
-        function nuevaVentana(){
-            ventana = window.open("https://www.google.es","width=400", "height=400");
+        function nuevaVentana() {
+            ventana = window.open("https://www.google.es", "width=400", "height=400");
         }
-        function cerrarVentana(){
+        function cerrarVentana() {
             ventana.close();
         }
-        function ampliar(){
-            ventana.resizeTo(30,30);
+        function ampliar() {
+            ventana.resizeTo(30, 30);
             ventana.focus();
         }
     </script>
 </head>
+
 <body>
     <div>
-    <h1>Ventana principal</h1>
-    <button id="Nueva" onclick="nuevaVentana()">Nueva Ventana</button>
-    <button id="Cerrar" onclick="cerrarVentana()">Cerrar Ventana</button>
-    <br>
-    <button id="Ampliar" onclick="ampliar()">Ampliar</button>
-    <button id="Reducir"onclick="Reducir()">Reducir</button>
-    <br>
-    Indique posición X
-    <input id="posX" type="number">
-    Indique posición Y
-    <input id="posY" type="number">
-    <button id="pos" onclick="mover()">Mover</button>
-</div>
+        <h1>Ventana principal</h1>
+        <button id="Nueva" onclick="nuevaVentana()">Nueva Ventana</button>
+        <button id="Cerrar" onclick="cerrarVentana()">Cerrar Ventana</button>
+        <br>
+        <button id="Ampliar" onclick="ampliar()">Ampliar</button>
+        <button id="Reducir" onclick="Reducir()">Reducir</button>
+        <br>
+        Indique posición X
+        <input id="posX" type="number">
+        Indique posición Y
+        <input id="posY" type="number">
+        <button id="pos" onclick="mover()">Mover</button>
+    </div>
 </body>
+
 </html>
