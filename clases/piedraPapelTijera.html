@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiedraPapelTijera</title>
+</head>
+
+<body>
+    <script>
+        class juego {
+            constructor(opciones, nombre, puntos) {
+                opciones = this.opciones;
+                nombre = this.nombre;
+                puntos = this.puntos;
+            }
+        }
+        var juego = new juego(aleatorio(), preguntarnombre())
+        function preguntarnombre() {
+            return this.nombre = prompt("Escribe aqui tu nombre");
+        }
+        function aleatorio(minimo, maximo) {
+            var numero = Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
+            return numero;
+        }
+        var eleccionUsuario = aleatorio;
+        function usuario(eleccionUsuario) {
+            var eleccionMaquina = aleatorio(0, 2);
+            if (eleccionUsuario == 0) {//el usuario eligio piedra 
+                if (opciones[eleccionMaquina] == 1) {//si la maquina eligio papel 
+                    console.log("perdiste");
+                } else {
+                    if (opciones[eleccionMaquina] == 2) {
+                        console.log("ganaste")
+                    } else {
+                        if (opciones[eleccionMaquina] == 0) {
+                            console.log('empate');
+                        }
+                    }
+                }
+            }
+            if (eleccionUsuario == 1) {//el usuario eligio papel 
+                if (opciones[eleccionMaquina] == 2) {
+                    console.log("perdiste");
+                } else {
+                    if (opciones[eleccionMaquina] == 0) {
+                        console.log("ganaste")
+
+                    } else {
+                        if (opciones[eleccionMaquina] == 1) {
+                            console.log('empate');
+                        }
+                    }
+                }
+            }
+            if (eleccionUsuario == 2) {//el usuario eligio tijera 
+                if (opciones[eleccionMaquina] == 1) {
+                    console.log("ganaste")
+
+                } else {
+                    if (opciones[eleccionMaquina] == 0) {
+                        console.log("perdiste");
+                    } else {
+                        if (opciones[eleccionMaquina] == 2) {
+                            console.log('empate');
+                        }
+                    }
+                }
+            }
+        }
+        usuario();
+    </script>
+</body>
+
+</html>
